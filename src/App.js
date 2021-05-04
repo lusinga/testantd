@@ -1,22 +1,26 @@
-import logo from './logo.svg';
+import React from 'react';
+import {Button, Alert} from 'antd';
 import './App.css';
+import 'antd/dist/antd.css';
+
+const onAlertClose = (e) => {
+  console.log(e,'I was closed.');
+};
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <Button type="primary">Hello</Button>
+        <Alert 
+        message="欢迎使用" 
+        type="success"
+        closable
+        onClose={onAlertClose}
+        />
       </header>
     </div>
   );
