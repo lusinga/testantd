@@ -12,7 +12,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          欢迎来到www.lusing.cn
         </p>
         <Button type="primary">Hello</Button>
         <Alert 
